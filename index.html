@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalize Seu Cartão</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Personalize Seu Cartão</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Controles</h2>
+                <form id="controlForm">
+                    <div class="form-group">
+                        <label for="bgColor">Cor de Fundo:</label>
+                        <input type="color" id="bgColor" class="form-control" value="#ffffff">
+                    </div>
+                    <div class="form-group">
+                        <label for="borderColor">Cor da Borda:</label>
+                        <input type="color" id="borderColor" class="form-control" value="#000000">
+                    </div>
+                    <div class="form-group">
+                        <label for="borderWidth">Largura da Borda (px):</label>
+                        <input type="range" id="borderWidth" class="form-control-range" min="0" max="20" value="2">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Texto:</label>
+                        <input type="text" id="text" class="form-control" value="Seu Texto Aqui">
+                    </div>
+                    <div class="form-group">
+                        <label for="fontSize">Tamanho da Fonte (px):</label>
+                        <input type="range" id="fontSize" class="form-control-range" min="10" max="50" value="20">
+                    </div>
+                    <div class="form-group">
+                        <label for="imageUpload">Carregar Imagem:</label>
+                        <input type="file" id="imageUpload" class="form-control" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="imageX">Posição Horizontal:</label>
+                        <input type="range" id="imageX" class="form-control-range" min="0" max="45" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="imageY">Posição Vertical:</label>
+                        <input type="range" id="imageY" class="form-control-range" min="0" max="15" value="0">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Preview</h2>
+                <div id="card" class="card p-3">
+                    <p id="cardText">Seu Texto Aqui</p>
+                    <img id="cardImage" src="..." alt="Imagem escolhida pelo Usuario" style="display:none; position:absolute;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

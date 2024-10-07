@@ -1,0 +1,20 @@
+#card {
+    border-style: solid;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+#cardImage {
+    max-width: 100px; /* Limite o tamanho da imagem */
+    max-height: 100px; /* Limite o tamanho da imagem */
+}
